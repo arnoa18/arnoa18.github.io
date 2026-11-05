@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>예약 녹음 - ARNOA</title>
+<style>
+  :root { --bg:#F4FAFF; --card:#FFFFFF; --ink:#0B2540; --sub:#5B7A99; --pri:#1E90FF; --line:#CFE3F7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#08121F; --card:#10223A; --ink:#EAF4FF; --sub:#8FB0D0; --pri:#3DA5FF; --line:#1E3A5C; }
+  }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif; line-height:1.7; }
+  header { background:#1E6FD6; color:#fff; padding:16px 20px; }
+  header a { color:#fff; text-decoration:none; font-size:.95rem; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  .top { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
+  .top img { width:88px; height:88px; border-radius:20px; flex:none; }
+  .top h1 { margin:0; font-size:1.4rem; }
+  .top p { margin:4px 0 0; color:var(--sub); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin-bottom:12px; }
+  .card h2 { margin:0 0 6px; font-size:1.05rem; }
+  .card ul { margin:0; padding-left:1.2rem; color:var(--sub); }
+  .card p { margin:0; color:var(--sub); }
+  .btns { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0; }
+  .btn { display:inline-block; padding:10px 18px; border-radius:10px; text-decoration:none; font-weight:500; }
+  .btn.pri { background:var(--pri); color:#fff; }
+  .btn.sec { border:1px solid var(--line); color:var(--ink); background:var(--card); }
+  footer { max-width:720px; margin:0 auto; padding:0 16px 32px; color:var(--sub); font-size:.9rem; }
+  footer a { color:var(--pri); }
+</style>
+</head>
+<body>
+<header><a href="/">&larr; ARNOA 앱</a></header>
+<main>
+  <div class="top">
+    <img src="icon.png" alt="예약 녹음 아이콘">
+    <div>
+      <h1>예약 녹음</h1>
+      <p>정해진 시간에 자동으로 녹음</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>예약</h2>
+    <ul><li>시작 시각과 녹음 길이 설정</li><li>요일별 반복 또는 한 번만</li><li>예약마다 제목 붙이기</li></ul>
+  </div>
+  <div class="card">
+    <h2>녹음 파일</h2>
+    <ul><li>시작·종료 시각과 제목으로 목록 확인</li><li>재생과 삭제</li><li>기기에 저장해서 다른 곳으로 옮기기</li></ul>
+  </div>
+  <div class="card">
+    <h2>앱 잠금</h2>
+    <ul><li>숫자 4자리 비밀번호로 앱을 열 때 확인</li><li>설정에서 켜고 끌 수 있음</li></ul>
+  </div>
+  <div class="card">
+    <h2>개인정보</h2>
+    <ul><li>개인정보를 수집하지 않음</li><li>녹음 파일과 스케줄은 기기 안에만 저장</li></ul>
+  </div>
+  <div class="card">
+    <h2>사용 안내</h2>
+    <p>확실한 작동을 위해 앱을 종료하지 말고 홈 버튼으로 내려놓아 주세요. 다른 사람의 음성을 녹음할 때는 해당 지역의 법령에 따라 상대방의 동의가 필요할 수 있으며, 녹음과 이용에 대한 책임은 사용자에게 있습니다.</p>
+  </div>
+
+  <div class="btns">
+    <a class="btn pri" href="https://play.google.com/store/apps/details?id=com.arnoa.scheduledrecorder">Google Play에서 보기</a>
+    <a class="btn sec" href="/apps-privacy/scheduled-recorder/">개인정보처리방침</a>
+  </div>
+</main>
+<footer>&copy; ARNOA &middot; 문의: <a href="mailto:ggongary18@naver.com">ggongary18@naver.com</a></footer>
+</body>
+</html>
