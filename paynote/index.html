@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>급여노트 - ARNOA</title>
+<style>
+  :root { --bg:#F4FAFF; --card:#FFFFFF; --ink:#0B2540; --sub:#5B7A99; --pri:#1E90FF; --line:#CFE3F7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#08121F; --card:#10223A; --ink:#EAF4FF; --sub:#8FB0D0; --pri:#3DA5FF; --line:#1E3A5C; }
+  }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif; line-height:1.7; }
+  header { background:#1E6FD6; color:#fff; padding:16px 20px; }
+  header a { color:#fff; text-decoration:none; font-size:.95rem; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  .top { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
+  .top img { width:88px; height:88px; border-radius:20px; flex:none; }
+  .top h1 { margin:0; font-size:1.4rem; }
+  .top p { margin:4px 0 0; color:var(--sub); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin-bottom:12px; }
+  .card h2 { margin:0 0 6px; font-size:1.05rem; }
+  .card ul { margin:0; padding-left:1.2rem; color:var(--sub); }
+  .btns { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0; }
+  .btn { display:inline-block; padding:10px 18px; border-radius:10px; text-decoration:none; font-weight:500; }
+  .btn.pri { background:var(--pri); color:#fff; }
+  .btn.sec { border:1px solid var(--line); color:var(--ink); background:var(--card); }
+  footer { max-width:720px; margin:0 auto; padding:0 16px 32px; color:var(--sub); font-size:.9rem; }
+  footer a { color:var(--pri); }
+</style>
+</head>
+<body>
+<header><a href="/">&larr; ARNOA 앱</a></header>
+<main>
+  <div class="top">
+    <img src="icon.png" alt="급여노트 아이콘">
+    <div>
+      <h1>급여노트</h1>
+      <p>실수령액 계산기</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>급여 계산</h2>
+    <ul><li>연봉 실수령액</li><li>퇴직금</li><li>주휴수당·시급</li><li>실업급여</li></ul>
+  </div>
+  <div class="card">
+    <h2>생활 계산</h2>
+    <ul><li>월세↔전세 전환</li><li>중개수수료</li><li>대출 이자</li><li>예금·적금 이자</li><li>퍼센트 계산</li></ul>
+  </div>
+  <div class="card">
+    <h2>내 급여 기록</h2>
+    <ul><li>직장별로 년차 급여와 메모를 기록</li><li>급여 성장 그래프와 증감률 확인</li></ul>
+  </div>
+
+  <div class="btns">
+    <a class="btn pri" href="https://play.google.com/store/apps/details?id=com.arnoa.paynote">Google Play에서 보기</a>
+    <a class="btn sec" href="/apps-privacy/paynote/">개인정보처리방침</a>
+  </div>
+</main>
+<footer>&copy; ARNOA &middot; 문의: <a href="mailto:ggongary18@naver.com">ggongary18@naver.com</a></footer>
+</body>
+</html>
