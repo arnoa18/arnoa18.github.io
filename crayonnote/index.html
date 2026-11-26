@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>크레용노트 - ARNOA</title>
+<style>
+  :root { --bg:#F4FAFF; --card:#FFFFFF; --ink:#0B2540; --sub:#5B7A99; --pri:#1E90FF; --line:#CFE3F7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#08121F; --card:#10223A; --ink:#EAF4FF; --sub:#8FB0D0; --pri:#3DA5FF; --line:#1E3A5C; }
+  }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif; line-height:1.7; }
+  header { background:#1E6FD6; color:#fff; padding:16px 20px; }
+  header a { color:#fff; text-decoration:none; font-size:.95rem; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  .top { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
+  .top img { width:88px; height:88px; border-radius:20px; flex:none; }
+  .top h1 { margin:0; font-size:1.4rem; }
+  .top p { margin:4px 0 0; color:var(--sub); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin-bottom:12px; }
+  .card h2 { margin:0 0 6px; font-size:1.05rem; }
+  .card ul { margin:0; padding-left:1.2rem; color:var(--sub); }
+  .card p { margin:0; color:var(--sub); }
+  .btns { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0; }
+  .btn { display:inline-block; padding:10px 18px; border-radius:10px; text-decoration:none; font-weight:500; }
+  .btn.pri { background:var(--pri); color:#fff; }
+  .btn.sec { border:1px solid var(--line); color:var(--ink); background:var(--card); }
+  footer { max-width:720px; margin:0 auto; padding:0 16px 32px; color:var(--sub); font-size:.9rem; }
+  footer a { color:var(--pri); }
+</style>
+</head>
+<body>
+<header><a href="/">&larr; ARNOA 앱</a></header>
+<main>
+  <div class="top">
+    <img src="icon.png" alt="크레용노트 아이콘">
+    <div>
+      <h1>크레용노트</h1>
+      <p>그림일기, 생활계획표, 메모 위젯, 사진 위젯</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>그림일기</h2>
+    <ul><li>한 칸에 한 글자, 손으로 쓴 듯한 원고지 일기</li><li>날씨와 기분 고르기, 사진 붙이기, 직접 낙서하기</li><li>크레용으로 칠하고 도장 찍기</li><li>일기를 그림 파일로 만들어 공유</li></ul>
+  </div>
+  <div class="card">
+    <h2>생활계획표</h2>
+    <ul><li>하루 24시간을 한 바퀴로 한 동그란 계획표</li><li>시간대마다 색을 칠해 하루를 한눈에</li></ul>
+  </div>
+  <div class="card">
+    <h2>메모와 위젯</h2>
+    <ul><li>색깔 메모, 홈 화면에 붙이는 메모 위젯</li><li>사진 위젯과 달력 위젯</li></ul>
+  </div>
+  <div class="card">
+    <h2>앱 잠금과 백업</h2>
+    <ul><li>숫자 4자리 비밀번호로 앱 잠금</li><li>백업 파일을 기기에 저장하고 다시 불러오기</li></ul>
+  </div>
+  <div class="card">
+    <h2>개인정보</h2>
+    <ul><li>일기, 메모, 사진은 기기 안에만 저장</li><li>개발자 서버로 전송하지 않음</li></ul>
+  </div>
+
+  <div class="btns">
+    <a class="btn pri" href="https://play.google.com/store/apps/details?id=com.arnoa.crayonnote">Google Play에서 보기</a>
+    <a class="btn sec" href="/apps-privacy/crayonnote/">개인정보처리방침</a>
+  </div>
+</main>
+<footer>&copy; ARNOA &middot; 문의: <a href="mailto:ggongary18@naver.com">ggongary18@naver.com</a></footer>
+</body>
+</html>
