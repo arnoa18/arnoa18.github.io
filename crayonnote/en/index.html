@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrayonNote - ARNOA</title>
+<style>
+  :root { --bg:#F4FAFF; --card:#FFFFFF; --ink:#0B2540; --sub:#5B7A99; --pri:#1E90FF; --line:#CFE3F7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#08121F; --card:#10223A; --ink:#EAF4FF; --sub:#8FB0D0; --pri:#3DA5FF; --line:#1E3A5C; }
+  }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.7; }
+  header { background:#1E6FD6; color:#fff; padding:16px 20px; }
+  header a { color:#fff; text-decoration:none; font-size:.95rem; }
+  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
+  .top { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
+  .top img { width:88px; height:88px; border-radius:20px; flex:none; }
+  .top h1 { margin:0; font-size:1.4rem; }
+  .top p { margin:4px 0 0; color:var(--sub); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin-bottom:12px; }
+  .card h2 { margin:0 0 6px; font-size:1.05rem; }
+  .card ul { margin:0; padding-left:1.2rem; color:var(--sub); }
+  .btns { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0; }
+  .btn { display:inline-block; padding:10px 18px; border-radius:10px; text-decoration:none; font-weight:500; }
+  .btn.pri { background:var(--pri); color:#fff; }
+  .btn.sec { border:1px solid var(--line); color:var(--ink); background:var(--card); }
+  footer { max-width:720px; margin:0 auto; padding:0 16px 32px; color:var(--sub); font-size:.9rem; }
+  footer a { color:var(--pri); }
+</style>
+</head>
+<body>
+<header><a href="/">&larr; ARNOA apps</a></header>
+<main>
+  <div class="top">
+    <img src="../icon.png" alt="CrayonNote icon">
+    <div>
+      <h1>CrayonNote</h1>
+      <p>Picture diary, daily planner, memo widget, photo widget</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Picture diary</h2>
+    <ul><li>Handwritten-style diary, one letter per square</li><li>Pick the weather and your mood, add photos, or doodle your own picture</li><li>Color with crayons and press stamps</li><li>Share a diary as a picture</li></ul>
+  </div>
+  <div class="card">
+    <h2>Daily planner</h2>
+    <ul><li>A round planner that wraps your 24 hours into one circle</li><li>Color each stretch of time to see your day at a glance</li></ul>
+  </div>
+  <div class="card">
+    <h2>Memos and widgets</h2>
+    <ul><li>Colorful memos and a memo widget for your home screen</li><li>Photo widget and calendar widget</li></ul>
+  </div>
+  <div class="card">
+    <h2>App lock and backup</h2>
+    <ul><li>Lock the app with a 4-digit password</li><li>Save a backup file on your device and restore it later</li></ul>
+  </div>
+  <div class="card">
+    <h2>Privacy</h2>
+    <ul><li>Diaries, memos and photos stay on your device</li><li>Nothing is sent to the developer's servers</li></ul>
+  </div>
+
+  <div class="btns">
+    <a class="btn pri" href="https://play.google.com/store/apps/details?id=com.arnoa.crayonnote">Get it on Google Play</a>
+    <a class="btn sec" href="/apps-privacy/crayonnote/en/">Privacy policy</a>
+  </div>
+</main>
+<footer>&copy; ARNOA &middot; Contact: <a href="mailto:ggongary18@naver.com">ggongary18@naver.com</a></footer>
+</body>
+</html>
